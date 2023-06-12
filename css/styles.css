@@ -577,7 +577,7 @@ margin-bottom: 16px;
   transform: translateY(0%); 
 }
 
-.sub-par {
+.sub-bar {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -627,27 +627,35 @@ margin-bottom: 16px;
   border-radius: 4px;
   outline: none;
 }
-.subscribe {
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
+.sub {
   display: inline-flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   padding: 8px 24px;
-  background: #4d5ae5;
   border-radius: 4px;
+
+  background: #4d5ae5;
   color: #ffffff;
   border-style: none;
   min-width: 165px;
   cursor: pointer;
 }
 
-.plane {
+.telegram {
   fill: #ffffff;
   margin-left: 16px;
 }
+.sub:hover,
+.sub:focus {
+  background-color: #404bbf;
+  
+}
+
 /* BACKDROP___________________________________________________- */
 .backdrop {
   position: fixed;
