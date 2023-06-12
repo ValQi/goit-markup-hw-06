@@ -41,6 +41,18 @@ ul {
   margin: 0;
   padding: 0;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* Basic-Stuff */
 .container {
   width: 1158px;
@@ -673,6 +685,7 @@ margin-bottom: 16px;
   pointer-events: none;
 }
 .modal{
+  
   position: absolute;
   top: 50%;
   left: 50%;
@@ -814,8 +827,8 @@ margin-bottom: 16px;
   border-color: var(--primary-brand);
 }
 
-.wrap-privacy {
-  margin-bottom: 24px;
+.privacy {
+  margin-bottom: 16px
 }
 
 .check-text {
@@ -844,12 +857,12 @@ margin-bottom: 16px;
 }
 
 .modal-check:checked + .check-text span {
-  background-color: var(--primary-brand);
+  background-color:#404bbf;
   border: none;
   fill: #f4f4fd;
 }
 
-.wrap-privacy:hover .check {
+.privacy:hover .check {
   border-color: var(--primary-brand);
 }
 
